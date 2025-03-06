@@ -1,0 +1,36 @@
+/* Mengimpor Tailwind dan file lainnya */
+@import "tailwindcss/base";
+@import "./base.css";
+
+@import "tailwindcss/components";
+@import "./components.css";
+
+@import "tailwindcss/utilities";
+
+@import "./pages.css";
+@import "highlight.js/styles/atom-one-dark.css"; /* Just for demo purpose only for highlighting code */
+
+/* Atur gaya scrollbar untuk semua browser modern */
+::-webkit-scrollbar {
+  width: 2px; /* Lebar batang scroll */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray; /* Warna batang scroll */
+  border-radius: 10px; /* Membuat batang scroll sedikit membulat */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Background transparan di bawah batang scroll */
+}
+
+/* Hilangkan tombol up dan down di ujung atas dan bawah */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Untuk Firefox */
+* {
+  scrollbar-width: thin; /* Mengatur lebar scrollbar */
+  scrollbar-color: gray transparent; /* Warna batang scroll dan latar belakang di bawah batang */
+}
